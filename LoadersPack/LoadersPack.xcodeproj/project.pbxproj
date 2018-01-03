@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0536A041FFD4991006EB10A /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0536A031FFD4991006EB10A /* CircleView.swift */; };
+		C0536A061FFD49BC006EB10A /* RippleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0536A051FFD49BC006EB10A /* RippleLoader.swift */; };
 		C0BD5FC41FFD46EE00ADF2B6 /* LoadersPack.h in Headers */ = {isa = PBXBuildFile; fileRef = C0BD5FC21FFD46EE00ADF2B6 /* LoadersPack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0536A031FFD4991006EB10A /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		C0536A051FFD49BC006EB10A /* RippleLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleLoader.swift; sourceTree = "<group>"; };
 		C0BD5FBF1FFD46EE00ADF2B6 /* LoadersPack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadersPack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD5FC21FFD46EE00ADF2B6 /* LoadersPack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadersPack.h; sourceTree = "<group>"; };
 		C0BD5FC31FFD46EE00ADF2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +31,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0536A011FFD4941006EB10A /* BasicViews */ = {
+			isa = PBXGroup;
+			children = (
+				C0536A031FFD4991006EB10A /* CircleView.swift */,
+			);
+			path = BasicViews;
+			sourceTree = "<group>";
+		};
+		C0536A021FFD4951006EB10A /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				C0536A051FFD49BC006EB10A /* RippleLoader.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
 		C0BD5FB51FFD46EE00ADF2B6 = {
 			isa = PBXGroup;
 			children = (
@@ -46,6 +66,8 @@
 		C0BD5FC11FFD46EE00ADF2B6 /* LoadersPack */ = {
 			isa = PBXGroup;
 			children = (
+				C0536A021FFD4951006EB10A /* Loaders */,
+				C0536A011FFD4941006EB10A /* BasicViews */,
 				C0BD5FC21FFD46EE00ADF2B6 /* LoadersPack.h */,
 				C0BD5FC31FFD46EE00ADF2B6 /* Info.plist */,
 			);
@@ -95,6 +117,7 @@
 				TargetAttributes = {
 					C0BD5FBE1FFD46EE00ADF2B6 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0536A061FFD49BC006EB10A /* RippleLoader.swift in Sources */,
+				C0536A041FFD4991006EB10A /* CircleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +278,7 @@
 		C0BD5FC81FFD46EE00ADF2B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.agrawalsuneet.LoadersPack;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +301,7 @@
 		C0BD5FC91FFD46EE00ADF2B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
